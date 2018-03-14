@@ -1,21 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+const App = () => (
+  <div>
+    <nav className="uk-navbar-container" data-uk-navbar>
+      <div className="uk-navbar-left">
+        <div className="uk-navbar-item uk-logo">
+          Logo
+        </div>
+      </div>
+
+      <div className="uk-navbar-right">
+        <ul className="uk-navbar-nav">
+          <li><a href="uikit">Inicio</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div className="uk-section">
+      <div className="uk-container">
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit <code>src/App.jsx</code> and save to reload.
         </p>
       </div>
-    );
-  }
-}
+    </div>
+  </div>
+);
 
 export default App;
